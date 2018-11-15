@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/ContextMenuCustomization/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/ContextMenuCustomization/MainWindow.xaml.vb))
+* [MainWindow.xaml.cs](./CS/ContextMenuCustomization/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/ContextMenuCustomization/MainWindow.xaml.vb))
+<!-- default file list end -->
 # How to customize the popup menu of the WPF RichEdit control
 
 

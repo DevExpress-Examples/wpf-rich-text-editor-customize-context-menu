@@ -1,0 +1,41 @@
+﻿<dx:ThemedWindow x:Class="WpfRichEditorMenuCustomization.MainWindow" mc:Ignorable="d" Title="Rich Text Editor" 
+                 Height="450" Width="800"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:WpfRichEditorMenuCustomization"
+    xmlns:dxre="http://schemas.devexpress.com/winfx/2008/xaml/richedit" 
+    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars">
+    <Grid>
+        <dxre:RichEditControl Name="richTextEditor">
+            <dxre:RichEditControl.MenuCustomizations>
+                <dxre:RichEditMenuCustomization MenuType="Text">
+                    <!--Add a separator after the first three menu items.-->
+                    <dxb:InsertAction Index="4">
+                        <dxb:BarItemSeparator />
+                    </dxb:InsertAction>
+                    <!--Insert a custom menu item to highlight selected text.-->
+                    <dxb:InsertAction Index="5">
+                        <dxb:BarButtonItem Content="Highlight Selection" 
+                                           ItemClick="HighlightSelection_ItemClick" />
+                    </dxb:InsertAction>
+                    <!--Add a new item to the end of the context menu
+                    and bind this item to the Rich Text Editor's command.-->
+                    <dxb:BarButtonItem Command="{Binding RelativeSource={RelativeSource Self}, Mode=OneWay, 
+                        Path=(dxre:RichEditControl.RichEdit).CommandProvider.InsertFloatingPicture}" 
+                        Content="Insert Picture" />
+                    <!--Change the "New Comment" item's content.-->
+                    <dxb:UpdateAction ElementName="{x:Static dxre:DefaultBarItemNames.PopupMenuItem_NewComment}"
+                                      PropertyName="Content"
+                                      Value="Add Comment"/>
+                    <!--Remove the "Increase Indent" item from the menu.-->
+                    <dxb:RemoveAction ElementName="{x:Static dxre:DefaultBarItemNames.PopupMenuItem_IncreaseIndent}"/>
+                    <!--Remove the "Decrease Indent" item from the menu.-->
+                    <dxb:RemoveAction ElementName="{x:Static dxre:DefaultBarItemNames.PopupMenuItem_DecreaseIndent}"/>
+                </dxre:RichEditMenuCustomization>
+            </dxre:RichEditControl.MenuCustomizations>
+        </dxre:RichEditControl>
+    </Grid>
+</dx:ThemedWindow>

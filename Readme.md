@@ -9,7 +9,7 @@ This example demonstrates how to customize the [Text](https://docs.devexpress.co
 
 ![Custom context menu for the Rich Text Editor](./media/rich-text-editor-custom-context-menu.png)
 
-Add the required [bar actions](https://docs.devexpress.com/WPF/7045/controls-and-libraries/ribbon-bars-and-menu/bars/bar-actions) to the [RichEditControl.MenuCustomizations](xref:DevExpress.Xpf.RichEdit.RichEditControl.MenuCustomizations) collection to create, modify or remove menu items.
+Add the required [bar actions](https://docs.devexpress.com/WPF/7045/controls-and-libraries/ribbon-bars-and-menu/bars/bar-actions) to the [RichEditControl.MenuCustomizations](https://docs.devexpress.com/WPF/DevExpress.Xpf.RichEdit.RichEditControl.MenuCustomizations) collection to create, modify or remove menu items.
 
 ## Documentation
 

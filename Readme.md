@@ -21,7 +21,7 @@ Refer to the following help topic for implementation details: [Customize Context
 * [MainWindow.xaml](./CS/WpfRichEditorMenuCustomization/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfRichEditorMenuCustomization/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/WpfRichEditorMenuCustomization/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfRichEditorMenuCustomization/MainWindow.xaml.vb))
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-rich-text-editor-customize-context-menu&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-rich-text-editor-customize-context-menu&~~~was_helpful=no)
 

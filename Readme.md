@@ -19,8 +19,8 @@ Refer to the following help topic for implementation details: [Customize Context
 
 ## Files to Look At
 
-* [MainWindow.xaml](./CS/WpfRichEditorMenuCustomization/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfRichEditorMenuCustomization/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/WpfRichEditorMenuCustomization/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfRichEditorMenuCustomization/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/ContextMenuCustomization/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/ContextMenuCustomization/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/ContextMenuCustomization/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/ContextMenuCustomization/MainWindow.xaml.vb))
 
 
 <!-- feedback -->
